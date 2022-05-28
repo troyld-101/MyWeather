@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 
 // Issues with deploying app
-app.set("port", process.env.PORT || 5000);
+app.set("port", process.env.PORT || 4000);
 
 // Start node server
 app.listen(app.get("port"), function () {
