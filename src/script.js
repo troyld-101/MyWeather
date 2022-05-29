@@ -1,14 +1,3 @@
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config();
-}
-
-const app = require("http").createServer((req, res) => res.send("Ahoy!"));
-const PORT = process.env.PORT || 4000;
-
-app.listen(PORT, () => {
-  console.log(`Server is listening on port: ${PORT}`);
-});
-
 let weather = {
   apiKey: "f17b8cc4f6402c486f55e7111980a98c",
   fetchWeather: function (city) {
